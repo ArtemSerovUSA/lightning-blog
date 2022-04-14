@@ -1,0 +1,68 @@
+@import "social_media.css";
+@import "color.css";
+@import "main_page_general.css";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
+/*-----Small Screens-----*/
+@media (max-width: 900px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "hd"
+        "main"
+        "sd"
+        "ft";
+    }
+
+    .box {
+        margin: 3px;
+        padding: 2px;
+    }
+
+    .posts {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+}
+
+/*-----Large Screens-----*/
+@media (min-width: 901px) {
+
+    .container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 100px auto 75px;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+
+    .box {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .posts {
+        flex-direction: column;
+    }
+
+    .postLink {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+
+}

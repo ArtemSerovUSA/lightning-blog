@@ -1,0 +1,107 @@
+@import "social_media.css";
+@import "color.css";
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap');
+
+/*-----Common for Posts-----*/
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    grid-auto-flow: dense;
+    margin: 10px;
+}
+
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+.author {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.author > div > img {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+.authorText {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.box {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+}
+
+.header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+  grid-area: ft;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+    margin: 1px;
+    padding: 1px;
+}
+
+.copyright {
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+}

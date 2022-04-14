@@ -1,0 +1,7 @@
+@import "blog_post.css";
+
+/*-----Layout-----*/
+
+.container {
+    grid-auto-rows: 100px;
+}

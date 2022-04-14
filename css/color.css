@@ -1,0 +1,50 @@
+/*-----Color Design-----*/
+
+body {
+    background-color: #e5e4db;
+    color: #0A070E;
+    font-family: 'Merriweather', serif;
+}
+
+.header {
+    border-bottom: 1px solid #a0a099;
+}
+
+.sidebar {
+    border: 1px solid #a0a099;
+}
+
+a {
+    color: #0A070E;
+}
+
+.postLink {
+    border: 1px solid #464866;
+    background-color: #cecdc5;
+}
+
+.postLink:hover {
+    border-color: #650DB0;
+}
+
+.content {
+    border: 1px solid #a0a099;
+}
+
+.footer {
+    border-top: 1px solid #a0a099;
+}
+
+button {
+    padding: 7px;
+    border: 1px solid #a0a099;
+    color: #e5e4db;
+    background-color: #650DB0;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.15s;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
